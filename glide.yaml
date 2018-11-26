@@ -1,0 +1,17 @@
+package: we.com/vera.jiang/alertbeat
+import:
+- package: github.com/astaxie/beego
+  version: ^1.11.0
+  subpackages:
+  - httplib
+- package: github.com/elastic/beats
+  version: ^5.6.8
+  subpackages:
+  - libbeat/beat
+  - libbeat/common
+  - libbeat/publisher
+- package: github.com/toolkits/file
+- package: gopkg.in/yaml.v2
+  version: ^2.2.1
+- package: golang.org/x/sys
+- package: golang.org/x/net
