@@ -6,7 +6,7 @@
 
 - 业务API
 ```
-curl -XPOST http://127.0.0.1:8989/v1/t8t -d'{
+curl -XPOST http://127.0.0.1:8989/v1/t1 -d'{
 	"labels":{	   
 		"alertname":"10 test content",
 		"env":"idc",
@@ -19,7 +19,7 @@ curl -XPOST http://127.0.0.1:8989/v1/t8t -d'{
 		"domain":"test-abc-abc",
 		"duration":"0",
 		"host":"10.10.10.11",
-		"interface":"com.to8to.rpc.utils.LogUtils.logByLevel",
+		"interface":"LogUtils.logByLevel",
 		"level":"INFO",
 		"time":"4:00PM 03/26"
 	}

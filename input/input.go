@@ -15,7 +15,7 @@ import (
 func Start() {
 	listen := conf.Config.Web
 	http.HandleFunc("/", sayHi)
-	http.HandleFunc("/v1/t8t", handleT8TAlertMsg)
+	http.HandleFunc("/v1/t1", handleT8TAlertMsg)
 	http.HandleFunc("/v1/basic", handleBasicAlarm)
 	err := http.ListenAndServe(listen, nil)
 	if err != nil {
